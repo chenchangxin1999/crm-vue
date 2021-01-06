@@ -41,65 +41,16 @@
               <span slot="title">运营商管理</span>
             </el-menu-item>
 
-
-            <el-menu-item index="3">
-              <i class="el-icon-setting"></i>
-              <span slot="title">运营商管理</span>
-            </el-menu-item>
-            <el-menu-item index="3">
-              <i class="el-icon-setting"></i>
-              <span slot="title">运营商管理</span>
-            </el-menu-item>
-            <el-menu-item index="3">
-              <i class="el-icon-setting"></i>
-              <span slot="title">运营商管理</span>
-            </el-menu-item>
-            <el-menu-item index="3">
-              <i class="el-icon-setting"></i>
-              <span slot="title">运营商管理</span>
-            </el-menu-item>
-            <el-menu-item index="3">
-              <i class="el-icon-setting"></i>
-              <span slot="title">运营商管理</span>
-            </el-menu-item>
-            <el-menu-item index="3">
-              <i class="el-icon-setting"></i>
-              <span slot="title">运营商管理</span>
-            </el-menu-item>
-            <el-menu-item index="3">
-              <i class="el-icon-setting"></i>
-              <span slot="title">运营商管理</span>
-            </el-menu-item>
-            <el-menu-item index="3">
-              <i class="el-icon-setting"></i>
-              <span slot="title">运营商管理</span>
-            </el-menu-item>
-            <el-menu-item index="3">
-              <i class="el-icon-setting"></i>
-              <span slot="title">运营商管理</span>
-            </el-menu-item>
-            <el-menu-item index="3">
-              <i class="el-icon-setting"></i>
-              <span slot="title">运营商管理</span>
-            </el-menu-item>
-            <el-menu-item index="3">
-              <i class="el-icon-setting"></i>
-              <span slot="title">运营商管理</span>
-            </el-menu-item>
-            <el-menu-item index="3">
-              <i class="el-icon-setting"></i>
-              <span slot="title">运营商管理</span>
-            </el-menu-item>
-            <el-menu-item index="3">
-              <i class="el-icon-setting"></i>
-              <span slot="title">运营商管理</span>
-            </el-menu-item>
           </el-menu>
         </el-scrollbar>
       </el-aside>
       <el-container>
         <el-header>Header</el-header>
-        <el-main>Main</el-main>
+        <el-main>
+          <div class="main-body">
+            <router-view/>
+          </div>
+        </el-main>
       </el-container>
     </el-container>
   </div>
@@ -114,6 +65,12 @@ export default {
 <style scoped>
 .main-box {
   height: 100%;
+}
+.main-body{
+  background-color: #fff;
+  height: 100%;
+  margin: 10px 0px 0px 10px;
+  padding: 20px 0px 0px 20px;
 }
 
 .scrollerbar {
@@ -157,10 +114,13 @@ export default {
   background-color: #E9EEF3;
   color: #444;
   text-align: center;
+  padding: 0;
+  overflow: hidden;
 }
 
 .el-container {
   height: 100%;
+
 }
 
 </style>
