@@ -15,7 +15,7 @@ const routes = [
     //redirect 表示重定向
     {
         path: '/',
-        redirect:"main"
+        redirect: "main"
     },
     {
         path: '/login',
@@ -25,7 +25,19 @@ const routes = [
     {
         path: '/main',
         name: 'main',
-        component: () => import('../views/main/index')
+        component: () => import('../views/main/index'),
+        children: [
+            {
+                path: '/index',
+                name: 'index',
+                component: () => import('../views/index/index')
+            },
+            {
+                path: '/supplier',
+                name: 'supplier',
+                component: () => import('../views/supplier/index')
+            },
+        ]
     },
 ]
 
